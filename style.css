@@ -1,0 +1,134 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+button{
+  font-size: 1rem;
+  width: 150px;
+  cursor: pointer;
+  float: right;
+  height: 35px;
+  color: brown;
+  
+  
+  border-radius: 6px;
+  padding-left: 7px;
+  transition-duration: 0.4s;
+  border-color: brown;
+}
+button:hover{
+  background-color: brown;
+  color: white;
+  border-color: brown;
+  
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  background-color: beige;
+  background-size: auto;
+}
+
+.title-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+.card{
+  width: 46%;
+}
+.left{
+  float: left;
+ 
+ 
+}
+.right{
+
+  float: right;
+}
+.card-text{
+  text-align: justify;
+  
+}
+.card img{
+  width: 100%;
+}
+
+.creative{
+  color: midnightblue;
+}
+#Contact{
+  text-align: left;
+ 
+}
+
+@media(max-width:680px) {
+.logo{
+    width:150px;
+  }
+h1{
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.card{
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.card img {
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline;
+  object-fit: cover;
+}
+.title-image{
+  margin:20px
+}
+.card-text{
+  padding-right: 10px;
+}
+}
+
+@media(max-width:1180px){
+  h1{
+    font-size: 4rem;
+    width: 100%;
+  }
+
+
+footer{
+  width: 100%;
+  display: block;
+}
+
+.card{
+  width: 50%;
+  display: block;
+  margin-bottom:30px ;
+  text-align: justify;
+}
+
+.card img{
+  width: 100%;
+  padding-right: 20px;
+}
+.card-text{
+  padding-right: 10px;
+}
+
+}
