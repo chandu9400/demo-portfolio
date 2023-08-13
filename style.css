@@ -13,26 +13,47 @@ body {
 h1 {
   font-size: 5rem;
 }
-button{
+.button{
   font-size: 1rem;
-  width: 150px;
+  width: 130px;
   cursor: pointer;
   float: right;
-  height: 35px;
-  color: brown;
+  height: 70px;
+  color: white;
+  text-align: center;
+  background-color: orange;
   
   
   border-radius: 6px;
   padding-left: 7px;
-  transition-duration: 0.4s;
-  border-color: brown;
+  transition:all 0.5s;
+  border-color: orange;
 }
-button:hover{
-  background-color: brown;
-  color: white;
-  border-color: brown;
-  
+.button span {
+
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 footer {
   text-align: right;
